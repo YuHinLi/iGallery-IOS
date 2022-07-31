@@ -10,9 +10,13 @@ import UIKit
 
 class RandomImageGenerator{
     static var endpoint = "https://picsum.photos"
+    static var setBound: Bool = false
     
     func generateImage(_ width: Int,_ height: Int, completion: @escaping (UIImage?) -> Void){
-        Self.endpoint += "/\(width)/\(height)"
+        if(!Self.setBound){
+            Self.endpoint += "/\(width)/\(height)"
+            Self.setBound = true
+        }
         guard let url = URL(string: Self.endpoint) else{
             completion(nil)
             print("URL Error")
