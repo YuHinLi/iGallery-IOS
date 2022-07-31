@@ -11,6 +11,7 @@ import UIKit
 class RandomImageGenerator{
     static var endpoint = "https://picsum.photos"
     static var setBound: Bool = false
+    static var currentImage: Data?
     
     func generateImage(_ width: Int,_ height: Int, completion: @escaping (UIImage?) -> Void){
         if(!Self.setBound){
@@ -27,6 +28,7 @@ class RandomImageGenerator{
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data{
                 let image = UIImage(data: data)
+                Self.currentImage = data
                 completion(image)
             }else{
                 print("Task Error")
@@ -34,5 +36,9 @@ class RandomImageGenerator{
             }
         }
         task.resume()
+    }
+    
+    func currentImage() -> Data?{
+        return Self.currentImage
     }
 }

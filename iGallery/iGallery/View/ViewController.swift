@@ -27,10 +27,11 @@ class ViewController: UIViewController {
     
     @IBAction func like(_ sender: Any) {
         
-//        if let currentImage = imageView.image {
-//            let image: Data = UIImagePNGRepresentation(currentImage)
-//            storage.saveImage(image)
-//        }
+        if let currentImage = generator.currentImage(){
+            storage.saveImage(currentImage)
+            print("Image stored")
+        }
+        	
         generateImage()
         print("Like")
     }
