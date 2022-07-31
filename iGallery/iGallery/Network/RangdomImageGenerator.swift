@@ -9,6 +9,26 @@ import Foundation
 import UIKit
 
 class RandomImageGenerator{
-    static let endpoint = "https://picsum.photos"
+    static var endpoint = "https://picsum.photos"
     
+    func generateImage(_ width: Int,_ height: Int, completion: @escaping (UIImage?) -> Void){
+        Self.endpoint += "/\(width)/\(height)"
+        guard let url = URL(string: Self.endpoint) else{
+            completion(nil)
+            print("URL Error")
+            return
+        }
+        
+        let request = URLRequest(url: url)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let data = data{
+                let image = UIImage(data: data)
+                completion(image)
+            }else{
+                print("Task Error")
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
 }
