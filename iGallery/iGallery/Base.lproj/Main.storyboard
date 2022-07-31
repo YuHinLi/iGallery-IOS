@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rf-iX-qAm">
-                                <rect key="frame" x="117" y="772" width="180" height="80"/>
+                                <rect key="frame" x="65" y="689" width="284" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5x-ZM-2yL">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5x-ZM-2yL">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="Dislike"/>
                                         <state key="highlighted" image="Dislike-Pressed"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCK-SU-QnI">
-                                        <rect key="frame" x="100" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="180" y="0.0" width="104" height="80"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="" image="Like"/>
                                         <state key="highlighted" image="Like-Pressed"/>
@@ -34,18 +34,16 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="fCK-SU-QnI" firstAttribute="leading" secondItem="C5x-ZM-2yL" secondAttribute="trailing" constant="20" id="2Pw-bn-OoQ"/>
                                     <constraint firstAttribute="bottom" secondItem="C5x-ZM-2yL" secondAttribute="bottom" id="6TG-XC-F4N"/>
-                                    <constraint firstItem="fCK-SU-QnI" firstAttribute="leading" secondItem="C5x-ZM-2yL" secondAttribute="trailing" constant="20" id="Bba-X8-TUn"/>
-                                    <constraint firstAttribute="bottom" secondItem="fCK-SU-QnI" secondAttribute="bottom" id="J5L-El-Woi"/>
-                                    <constraint firstItem="fCK-SU-QnI" firstAttribute="top" secondItem="9Rf-iX-qAm" secondAttribute="top" id="MQo-0L-jIQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="fCK-SU-QnI" secondAttribute="trailing" id="gow-wY-QDi"/>
+                                    <constraint firstItem="fCK-SU-QnI" firstAttribute="leading" secondItem="C5x-ZM-2yL" secondAttribute="trailing" constant="100" id="8ZE-dy-mqt"/>
+                                    <constraint firstAttribute="trailing" secondItem="fCK-SU-QnI" secondAttribute="trailing" id="PFS-fR-0wX"/>
                                     <constraint firstItem="C5x-ZM-2yL" firstAttribute="leading" secondItem="9Rf-iX-qAm" secondAttribute="leading" id="jBb-zg-Dxk"/>
                                     <constraint firstItem="C5x-ZM-2yL" firstAttribute="top" secondItem="9Rf-iX-qAm" secondAttribute="top" id="plt-JX-Z3H"/>
+                                    <constraint firstItem="fCK-SU-QnI" firstAttribute="top" secondItem="C5x-ZM-2yL" secondAttribute="top" id="wWR-97-YhP"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4e-kj-jez">
-                                <rect key="frame" x="340" y="44" width="74" height="56"/>
+                                <rect key="frame" x="320" y="111" width="74" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Gallery"/>
                                 <connections>
@@ -56,10 +54,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="X4e-kj-jez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B2t-sn-15R"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Rf-iX-qAm" secondAttribute="bottom" constant="10" id="uaK-Wt-Fdx"/>
+                            <constraint firstAttribute="trailing" secondItem="X4e-kj-jez" secondAttribute="trailing" constant="20" id="5Ey-H5-0IM"/>
+                            <constraint firstItem="9Rf-iX-qAm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="7me-fh-Jb5"/>
+                            <constraint firstItem="X4e-kj-jez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="OPH-eY-bHv"/>
+                            <constraint firstItem="X4e-kj-jez" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="aLn-OX-Tmt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Rf-iX-qAm" secondAttribute="bottom" constant="93" id="lWn-TD-Aju"/>
                             <constraint firstItem="9Rf-iX-qAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wih-hV-jut"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X4e-kj-jez" secondAttribute="trailing" id="ydo-aN-veV"/>
                         </constraints>
                     </view>
                 </viewController>

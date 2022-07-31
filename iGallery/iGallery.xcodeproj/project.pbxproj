@@ -26,12 +26,37 @@
 		F44359AD289653C100F7B740 /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
 		F44359AF289653DA00F7B740 /* RangdomImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangdomImageGenerator.swift; sourceTree = "<group>"; };
 		F44359B128965B0700F7B740 /* Download Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Download Assets"; sourceTree = "<group>"; };
+		F44359B428965EE400F7B740 /* iPhone_Settings_29_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Settings_29_2x.png; sourceTree = "<group>"; };
+		F44359B528965EE400F7B740 /* iPhone_App_60_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_App_60_3x.png; sourceTree = "<group>"; };
+		F44359B628965EE400F7B740 /* iPad_Notifications_20_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Notifications_20_2x.png; sourceTree = "<group>"; };
+		F44359B728965EE400F7B740 /* iPad_Mini_Notifications_20_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Mini_Notifications_20_2x.png; sourceTree = "<group>"; };
+		F44359B828965EE400F7B740 /* iPad_Mini_Spotlight_40_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Mini_Spotlight_40_2x.png; sourceTree = "<group>"; };
+		F44359B928965EE400F7B740 /* iPhone_App_60_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_App_60_2x.png; sourceTree = "<group>"; };
+		F44359BA28965EE400F7B740 /* iPhone_Settings_29_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Settings_29_3x.png; sourceTree = "<group>"; };
+		F44359BB28965EE400F7B740 /* iPad_Settings_29_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Settings_29_2x.png; sourceTree = "<group>"; };
+		F44359BC28965EE400F7B740 /* iPhone_Spotlight_40_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Spotlight_40_3x.png; sourceTree = "<group>"; };
+		F44359BD28965EE400F7B740 /* iPad_App_76_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_App_76_2x.png; sourceTree = "<group>"; };
+		F44359BE28965EE400F7B740 /* App_store_1024_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_store_1024_1x.png; sourceTree = "<group>"; };
+		F44359BF28965EE400F7B740 /* iPad_Spotlight_40_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Spotlight_40_1x.png; sourceTree = "<group>"; };
+		F44359C028965EE400F7B740 /* iPhone_Spotlight_40_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Spotlight_40_2x.png; sourceTree = "<group>"; };
+		F44359C128965EE400F7B740 /* iPad_Spotlight_40_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Spotlight_40_2x.png; sourceTree = "<group>"; };
+		F44359C228965EE400F7B740 /* iPad_Mini_App_76_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Mini_App_76_2x.png; sourceTree = "<group>"; };
+		F44359C328965EE400F7B740 /* iPad_Mini_Settings_29_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Mini_Settings_29_2x.png; sourceTree = "<group>"; };
+		F44359C428965EE400F7B740 /* iPad_Pro_Spotlight_40_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Pro_Spotlight_40_2x.png; sourceTree = "<group>"; };
+		F44359C528965EE400F7B740 /* iPhone_Notifications_20_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Notifications_20_3x.png; sourceTree = "<group>"; };
+		F44359C628965EE400F7B740 /* iPhone_Notifications_20_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Notifications_20_2x.png; sourceTree = "<group>"; };
+		F44359C728965EE400F7B740 /* iPad_Settings_29_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Settings_29_1x.png; sourceTree = "<group>"; };
+		F44359C828965EE400F7B740 /* iPad_App_76_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_App_76_1x.png; sourceTree = "<group>"; };
+		F44359C928965EE400F7B740 /* iPad_Pro_Settings_29_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Pro_Settings_29_2x.png; sourceTree = "<group>"; };
+		F44359CA28965EE400F7B740 /* iPad_Pro_App_83.5_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Pro_App_83.5_2x.png; sourceTree = "<group>"; };
+		F44359CB28965EE400F7B740 /* iPad_Pro_Notifications_20_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Pro_Notifications_20_2x.png; sourceTree = "<group>"; };
+		F44359CC28965EE400F7B740 /* iPad_Notifications_20_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Notifications_20_1x.png; sourceTree = "<group>"; };
 		F4FFF137288B78DB0033A37D /* iGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FFF13A288B78DB0033A37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4FFF13C288B78DB0033A37D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4FFF13E288B78DB0033A37D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4FFF141288B78DB0033A37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F4FFF143288B78DE0033A37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4FFF143288B78DE0033A37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = iGallery/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		F4FFF146288B78DE0033A37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4FFF148288B78DE0033A37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +98,38 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		F44359B328965EE400F7B740 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				F44359B428965EE400F7B740 /* iPhone_Settings_29_2x.png */,
+				F44359B528965EE400F7B740 /* iPhone_App_60_3x.png */,
+				F44359B628965EE400F7B740 /* iPad_Notifications_20_2x.png */,
+				F44359B728965EE400F7B740 /* iPad_Mini_Notifications_20_2x.png */,
+				F44359B828965EE400F7B740 /* iPad_Mini_Spotlight_40_2x.png */,
+				F44359B928965EE400F7B740 /* iPhone_App_60_2x.png */,
+				F44359BA28965EE400F7B740 /* iPhone_Settings_29_3x.png */,
+				F44359BB28965EE400F7B740 /* iPad_Settings_29_2x.png */,
+				F44359BC28965EE400F7B740 /* iPhone_Spotlight_40_3x.png */,
+				F44359BD28965EE400F7B740 /* iPad_App_76_2x.png */,
+				F44359BE28965EE400F7B740 /* App_store_1024_1x.png */,
+				F44359BF28965EE400F7B740 /* iPad_Spotlight_40_1x.png */,
+				F44359C028965EE400F7B740 /* iPhone_Spotlight_40_2x.png */,
+				F44359C128965EE400F7B740 /* iPad_Spotlight_40_2x.png */,
+				F44359C228965EE400F7B740 /* iPad_Mini_App_76_2x.png */,
+				F44359C328965EE400F7B740 /* iPad_Mini_Settings_29_2x.png */,
+				F44359C428965EE400F7B740 /* iPad_Pro_Spotlight_40_2x.png */,
+				F44359C528965EE400F7B740 /* iPhone_Notifications_20_3x.png */,
+				F44359C628965EE400F7B740 /* iPhone_Notifications_20_2x.png */,
+				F44359C728965EE400F7B740 /* iPad_Settings_29_1x.png */,
+				F44359C828965EE400F7B740 /* iPad_App_76_1x.png */,
+				F44359C928965EE400F7B740 /* iPad_Pro_Settings_29_2x.png */,
+				F44359CA28965EE400F7B740 /* iPad_Pro_App_83.5_2x.png */,
+				F44359CB28965EE400F7B740 /* iPad_Pro_Notifications_20_2x.png */,
+				F44359CC28965EE400F7B740 /* iPad_Notifications_20_1x.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
 		F4FFF12E288B78DA0033A37D = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +158,7 @@
 				F4FFF143288B78DE0033A37D /* Assets.xcassets */,
 				F4FFF145288B78DE0033A37D /* LaunchScreen.storyboard */,
 				F4FFF148288B78DE0033A37D /* Info.plist */,
+				F44359B328965EE400F7B740 /* Icon */,
 				F44359B128965B0700F7B740 /* Download Assets */,
 			);
 			path = iGallery;
