@@ -1,24 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iGallery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rf-iX-qAm">
+                                <rect key="frame" x="117" y="772" width="180" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5x-ZM-2yL">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="Dislike"/>
+                                        <state key="highlighted" image="Dislike-Pressed"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCK-SU-QnI">
+                                        <rect key="frame" x="100" y="0.0" width="80" height="80"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="" image="Like"/>
+                                        <state key="highlighted" image="Like-Pressed"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fCK-SU-QnI" firstAttribute="leading" secondItem="C5x-ZM-2yL" secondAttribute="trailing" constant="20" id="2Pw-bn-OoQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="C5x-ZM-2yL" secondAttribute="bottom" id="6TG-XC-F4N"/>
+                                    <constraint firstItem="fCK-SU-QnI" firstAttribute="leading" secondItem="C5x-ZM-2yL" secondAttribute="trailing" constant="20" id="Bba-X8-TUn"/>
+                                    <constraint firstAttribute="bottom" secondItem="fCK-SU-QnI" secondAttribute="bottom" id="J5L-El-Woi"/>
+                                    <constraint firstItem="fCK-SU-QnI" firstAttribute="top" secondItem="9Rf-iX-qAm" secondAttribute="top" id="MQo-0L-jIQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="fCK-SU-QnI" secondAttribute="trailing" id="gow-wY-QDi"/>
+                                    <constraint firstItem="C5x-ZM-2yL" firstAttribute="leading" secondItem="9Rf-iX-qAm" secondAttribute="leading" id="jBb-zg-Dxk"/>
+                                    <constraint firstItem="C5x-ZM-2yL" firstAttribute="top" secondItem="9Rf-iX-qAm" secondAttribute="top" id="plt-JX-Z3H"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4e-kj-jez">
+                                <rect key="frame" x="340" y="44" width="74" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Gallery"/>
+                                <connections>
+                                    <segue destination="PdM-Ie-wq0" kind="presentation" id="HqQ-Uc-xUZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X4e-kj-jez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B2t-sn-15R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Rf-iX-qAm" secondAttribute="bottom" constant="10" id="uaK-Wt-Fdx"/>
+                            <constraint firstItem="9Rf-iX-qAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wih-hV-jut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X4e-kj-jez" secondAttribute="trailing" id="ydo-aN-veV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-452.17391304347831" y="204.91071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sf2-eX-dV1">
+            <objects>
+                <navigationController id="PdM-Ie-wq0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lZC-90-k5B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lUO-hy-IQx" kind="relationship" relationship="rootViewController" id="ZBB-xK-Oiy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qT0-MW-OEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="205"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="QG5-W7-Fo5">
+            <objects>
+                <viewController id="lUO-hy-IQx" customClass="ListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WI1-de-u0d" customClass="List">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YpN-lW-BIQ">
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bAp-ck-yxS">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bAp-ck-yxS" id="HqB-PT-kWD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ebf-8I-QBG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ebf-8I-QBG" firstAttribute="trailing" secondItem="YpN-lW-BIQ" secondAttribute="trailing" id="8GY-lZ-bQv"/>
+                            <constraint firstItem="YpN-lW-BIQ" firstAttribute="leading" secondItem="Ebf-8I-QBG" secondAttribute="leading" id="LTW-E2-rnl"/>
+                            <constraint firstItem="YpN-lW-BIQ" firstAttribute="top" secondItem="Ebf-8I-QBG" secondAttribute="top" id="uMy-SV-Wbz"/>
+                            <constraint firstItem="Ebf-8I-QBG" firstAttribute="bottom" secondItem="YpN-lW-BIQ" secondAttribute="bottom" id="xTF-bt-l2V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RRf-m8-RKB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e17-JI-ii6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="205"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dislike" width="80" height="80"/>
+        <image name="Dislike-Pressed" width="80" height="80"/>
+        <image name="Gallery" width="50" height="42"/>
+        <image name="Like" width="80" height="80"/>
+        <image name="Like-Pressed" width="80" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

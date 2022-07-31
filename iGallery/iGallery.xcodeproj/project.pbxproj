@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44359AA2896539F00F7B740 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44359A92896539F00F7B740 /* ListViewController.swift */; };
+		F44359AC289653AF00F7B740 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44359AB289653AF00F7B740 /* ImageCell.swift */; };
+		F44359AE289653C100F7B740 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44359AD289653C100F7B740 /* ImageStorage.swift */; };
+		F44359B0289653DA00F7B740 /* RangdomImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44359AF289653DA00F7B740 /* RangdomImageGenerator.swift */; };
+		F44359B228965B0700F7B740 /* Download Assets in Resources */ = {isa = PBXBuildFile; fileRef = F44359B128965B0700F7B740 /* Download Assets */; };
 		F4FFF13B288B78DB0033A37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FFF13A288B78DB0033A37D /* AppDelegate.swift */; };
 		F4FFF13D288B78DB0033A37D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FFF13C288B78DB0033A37D /* SceneDelegate.swift */; };
 		F4FFF13F288B78DB0033A37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FFF13E288B78DB0033A37D /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F44359A92896539F00F7B740 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F44359AB289653AF00F7B740 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		F44359AD289653C100F7B740 /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
+		F44359AF289653DA00F7B740 /* RangdomImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangdomImageGenerator.swift; sourceTree = "<group>"; };
+		F44359B128965B0700F7B740 /* Download Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Download Assets"; sourceTree = "<group>"; };
 		F4FFF137288B78DB0033A37D /* iGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FFF13A288B78DB0033A37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4FFF13C288B78DB0033A37D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F44359A52896534700F7B740 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4FFF13E288B78DB0033A37D /* ViewController.swift */,
+				F44359A92896539F00F7B740 /* ListViewController.swift */,
+				F44359AB289653AF00F7B740 /* ImageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F44359A62896535200F7B740 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F44359AF289653DA00F7B740 /* RangdomImageGenerator.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F44359A82896537800F7B740 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F44359AD289653C100F7B740 /* ImageStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		F4FFF12E288B78DA0033A37D = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +92,16 @@
 		F4FFF139288B78DB0033A37D /* iGallery */ = {
 			isa = PBXGroup;
 			children = (
+				F44359A52896534700F7B740 /* View */,
+				F44359A82896537800F7B740 /* Storage */,
+				F44359A62896535200F7B740 /* Network */,
 				F4FFF13A288B78DB0033A37D /* AppDelegate.swift */,
 				F4FFF13C288B78DB0033A37D /* SceneDelegate.swift */,
-				F4FFF13E288B78DB0033A37D /* ViewController.swift */,
 				F4FFF140288B78DB0033A37D /* Main.storyboard */,
 				F4FFF143288B78DE0033A37D /* Assets.xcassets */,
 				F4FFF145288B78DE0033A37D /* LaunchScreen.storyboard */,
 				F4FFF148288B78DE0033A37D /* Info.plist */,
+				F44359B128965B0700F7B740 /* Download Assets */,
 			);
 			path = iGallery;
 			sourceTree = "<group>";
@@ -127,6 +166,7 @@
 			files = (
 				F4FFF147288B78DE0033A37D /* LaunchScreen.storyboard in Resources */,
 				F4FFF144288B78DE0033A37D /* Assets.xcassets in Resources */,
+				F44359B228965B0700F7B740 /* Download Assets in Resources */,
 				F4FFF142288B78DB0033A37D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44359B0289653DA00F7B740 /* RangdomImageGenerator.swift in Sources */,
 				F4FFF13F288B78DB0033A37D /* ViewController.swift in Sources */,
+				F44359AE289653C100F7B740 /* ImageStorage.swift in Sources */,
 				F4FFF13B288B78DB0033A37D /* AppDelegate.swift in Sources */,
+				F44359AA2896539F00F7B740 /* ListViewController.swift in Sources */,
 				F4FFF13D288B78DB0033A37D /* SceneDelegate.swift in Sources */,
+				F44359AC289653AF00F7B740 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
