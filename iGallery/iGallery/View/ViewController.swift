@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func like(_ sender: Any) {
-        
+
         if let currentImage = generator.currentImage(){
             storage.saveImage(currentImage)
             print("Image stored")
@@ -37,7 +37,10 @@ class ViewController: UIViewController {
     }
     
     private func generateImage(){
-        generator.generateImage(390, 844, completion: { image in
+        let width: Int = Int(imageView.bounds.width)
+        let height: Int = Int(imageView.bounds.height)
+        
+        generator.generateImage(width,height, completion: { image in
             if let image = image {
                 DispatchQueue.main.async {
                     self.imageView.image = image

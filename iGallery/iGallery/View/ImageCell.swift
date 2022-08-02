@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+class ImageCell{
+    @IBOutlet var imageCell: UIImageView!
+    
+    func displayImage(forImage imageForDisplay:UIImage){
+        imageCell.image = imageForDisplay
+    }
+}
