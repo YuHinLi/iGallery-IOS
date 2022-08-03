@@ -136,7 +136,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Gallery" largeTitleDisplayMode="always" id="mpg-Wu-rKZ">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.left" style="plain" id="vet-lh-owY"/>
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" style="plain" id="vet-lh-owY">
+                            <connections>
+                                <action selector="close:" destination="RoG-ux-qUP" id="A6J-c9-Glb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ZCr-Fg-Tgb" id="PMv-Tj-Xrr"/>
