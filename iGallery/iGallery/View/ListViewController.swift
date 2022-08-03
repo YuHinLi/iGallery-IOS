@@ -48,4 +48,31 @@ extension ListViewController: UITableViewDelegate{
         return tableView.frame.height
     }
     
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: "DELETE",handler: {(ac:UIContextualAction, view: UIView, success: (Bool)->Void) in
+            
+            //Delete Message from userDefault
+            let image = self.storage.images[indexPath.item]
+            self.storage.deleteImage(image)
+            
+            self.tableView?.reloadData()
+            
+            self.showConfirmation()
+            
+            success(true)
+        })
+        
+        deleteAction.backgroundColor = .red
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
+    private func showConfirmation(){
+        let alertController =  UIAlertController()
+        let action = UIAlertAction(title: "OK", style: .cancel)
+        alertController.addAction(action)
+        present(alertController,animated: true)
+    }
+    
+    
 }

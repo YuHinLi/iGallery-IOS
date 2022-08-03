@@ -112,8 +112,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="dI7-SQ-8bQ" firstAttribute="top" secondItem="wau-Hn-Rgu" secondAttribute="top" id="2bs-y3-Mpl"/>
-                                                <constraint firstItem="dI7-SQ-8bQ" firstAttribute="leading" secondItem="wau-Hn-Rgu" secondAttribute="leading" id="84K-tR-gs5"/>
-                                                <constraint firstAttribute="trailing" secondItem="dI7-SQ-8bQ" secondAttribute="trailing" id="n9g-dv-tsK"/>
+                                                <constraint firstItem="dI7-SQ-8bQ" firstAttribute="leading" secondItem="wau-Hn-Rgu" secondAttribute="leading" id="7GP-Mr-wjC"/>
+                                                <constraint firstAttribute="trailing" secondItem="dI7-SQ-8bQ" secondAttribute="trailing" id="bHy-ju-jir"/>
                                                 <constraint firstAttribute="bottom" secondItem="dI7-SQ-8bQ" secondAttribute="bottom" id="y5E-2O-7Iv"/>
                                             </constraints>
                                         </tableViewCellContentView>

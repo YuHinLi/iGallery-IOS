@@ -14,6 +14,7 @@ class ImageStorage{
 
     var images: [Data]{
         guard let images = userDefaults.array(forKey: Self.imagesKey) else{
+            print("Fail to create storage")
             return []
         }
         
@@ -24,6 +25,7 @@ class ImageStorage{
     
     func saveImage(_ image: Data){
         guard !hasImage(image) else{
+            print("hasImage() -> false")
             return
         }
         var images = self.images
@@ -33,12 +35,14 @@ class ImageStorage{
 
     func deleteImage(_ image: Data){
         guard hasImage(image) else{
+            print("hasImage() -> false")
             return
         }
         var images = self.images
         images.removeAll{ currentImage in
             return currentImage == image
         }
+        userDefaults.set(images, forKey: Self.imagesKey)
     }
     
     private func hasImage(_ image: Data) -> Bool{
