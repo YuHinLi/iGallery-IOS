@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func like(_ sender: Any) {
 
-        if let currentImage = generator.currentImage(){
+        if let currentImage = generator.getCurrentImage(){
             storage.saveImage(currentImage)
             print("Image stored")
         }

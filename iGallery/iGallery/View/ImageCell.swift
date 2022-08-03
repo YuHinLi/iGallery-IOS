@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ImageCell{
+class ImageCell:UITableViewCell{
     @IBOutlet var imageCell: UIImageView!
     
     func displayImage(forImage imageForDisplay:UIImage){

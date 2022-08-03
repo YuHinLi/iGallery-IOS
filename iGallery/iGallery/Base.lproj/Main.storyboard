@@ -80,68 +80,74 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="lUO-hy-IQx" kind="relationship" relationship="rootViewController" id="ZBB-xK-Oiy"/>
+                        <segue destination="RoG-ux-qUP" kind="relationship" relationship="rootViewController" id="xxO-Ci-2cV"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qT0-MW-OEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="417" y="205"/>
         </scene>
-        <!--List View Controller-->
-        <scene sceneID="QG5-W7-Fo5">
+        <!--Gallery-->
+        <scene sceneID="9be-Oi-TMl">
             <objects>
-                <viewController id="lUO-hy-IQx" customClass="ListViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WI1-de-u0d" customClass="List">
+                <viewController id="RoG-ux-qUP" customClass="ListViewController" customModule="iGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="78a-d5-byy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YpN-lW-BIQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZCr-Fg-Tgb">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="suk-y3-vYe">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <items>
-                                        <navigationItem title="Gallery" id="x7a-Zi-YYi"/>
-                                    </items>
-                                </navigationBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bAp-ck-yxS">
-                                        <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" id="Bh5-vh-Peh" customClass="ImageCell" customModule="iGallery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bAp-ck-yxS" id="HqB-PT-kWD">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bh5-vh-Peh" id="wau-Hn-Rgu">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ncl-xx-UDy">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-SQ-8bQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Ncl-xx-UDy" secondAttribute="trailing" id="1FM-2V-mnb"/>
-                                                <constraint firstItem="Ncl-xx-UDy" firstAttribute="top" secondItem="HqB-PT-kWD" secondAttribute="top" id="9Yu-QS-wxU"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ncl-xx-UDy" secondAttribute="bottom" id="Ped-uy-ogd"/>
-                                                <constraint firstItem="Ncl-xx-UDy" firstAttribute="leading" secondItem="HqB-PT-kWD" secondAttribute="leading" id="g5w-L5-j8T"/>
+                                                <constraint firstItem="dI7-SQ-8bQ" firstAttribute="top" secondItem="wau-Hn-Rgu" secondAttribute="top" id="2bs-y3-Mpl"/>
+                                                <constraint firstItem="dI7-SQ-8bQ" firstAttribute="leading" secondItem="wau-Hn-Rgu" secondAttribute="leading" id="84K-tR-gs5"/>
+                                                <constraint firstAttribute="trailing" secondItem="dI7-SQ-8bQ" secondAttribute="trailing" id="n9g-dv-tsK"/>
+                                                <constraint firstAttribute="bottom" secondItem="dI7-SQ-8bQ" secondAttribute="bottom" id="y5E-2O-7Iv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageCell" destination="dI7-SQ-8bQ" id="Chy-zz-jNt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Ebf-8I-QBG"/>
+                        <viewLayoutGuide key="safeArea" id="RVx-Hb-hau"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ebf-8I-QBG" firstAttribute="trailing" secondItem="YpN-lW-BIQ" secondAttribute="trailing" id="8GY-lZ-bQv"/>
-                            <constraint firstItem="YpN-lW-BIQ" firstAttribute="leading" secondItem="Ebf-8I-QBG" secondAttribute="leading" id="LTW-E2-rnl"/>
-                            <constraint firstItem="YpN-lW-BIQ" firstAttribute="top" secondItem="Ebf-8I-QBG" secondAttribute="top" id="uMy-SV-Wbz"/>
-                            <constraint firstItem="Ebf-8I-QBG" firstAttribute="bottom" secondItem="YpN-lW-BIQ" secondAttribute="bottom" id="xTF-bt-l2V"/>
+                            <constraint firstItem="ZCr-Fg-Tgb" firstAttribute="top" secondItem="RVx-Hb-hau" secondAttribute="top" id="Fgi-At-xbE"/>
+                            <constraint firstItem="ZCr-Fg-Tgb" firstAttribute="leading" secondItem="RVx-Hb-hau" secondAttribute="leading" id="HWJ-ni-afY"/>
+                            <constraint firstItem="RVx-Hb-hau" firstAttribute="trailing" secondItem="ZCr-Fg-Tgb" secondAttribute="trailing" id="aj8-3o-kYN"/>
+                            <constraint firstItem="RVx-Hb-hau" firstAttribute="bottom" secondItem="ZCr-Fg-Tgb" secondAttribute="bottom" id="ux6-4E-q21"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RRf-m8-RKB"/>
+                    <navigationItem key="navigationItem" title="Gallery" largeTitleDisplayMode="always" id="mpg-Wu-rKZ">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" style="plain" id="vet-lh-owY">
+                            <connections>
+                                <action selector="close:" destination="RoG-ux-qUP" id="aR0-gd-fog"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="✏️ Right Title" id="B4B-n3-6EV"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ZCr-Fg-Tgb" id="PMv-Tj-Xrr"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e17-JI-ii6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nmn-9A-Mmh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1264" y="205"/>
+            <point key="canvasLocation" x="1252" y="205"/>
         </scene>
     </scenes>
     <resources>
@@ -150,6 +156,8 @@
         <image name="Gallery" width="50" height="42"/>
         <image name="Like" width="80" height="80"/>
         <image name="Like-Pressed" width="80" height="80"/>
+        <image name="chevron.left" width="15" height="15"/>
+        <image name="✏️ Right Title" width="21" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
