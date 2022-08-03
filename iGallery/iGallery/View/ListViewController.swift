@@ -38,6 +38,12 @@ extension ListViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if(storage.images.count == 0){
+            tableView.setEmptyView(title: "No Liked image")
+        }else{
+            tableView.restore()
+        }
         return storage.images.count
     }
 }
@@ -75,4 +81,31 @@ extension ListViewController: UITableViewDelegate{
     }
     
     
+}
+
+extension UITableView{
+    func setEmptyView(title: String){
+        let emptyView = UIView(frame: CGRect(x: self.center.x, y: self.center.y, width: self.bounds.size.width, height: self.bounds.size.height))
+        
+        let titleLabel = UILabel()
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.textColor = UIColor.black
+        titleLabel.font = UIFont(name: "HelveticaNeue-Regular", size: 18)
+        
+        emptyView.addSubview(titleLabel)
+        titleLabel.centerXAnchor.constraint(equalTo: emptyView.centerXAnchor).isActive = true
+        
+        titleLabel.centerYAnchor.constraint(equalTo: emptyView.centerYAnchor).isActive = true
+        
+        titleLabel.text = title
+        
+        self.backgroundView = emptyView
+        self.separatorStyle = .none
+    }
+    
+    func restore(){
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+    }
 }

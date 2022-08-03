@@ -11,6 +11,7 @@ import UIKit
 class ImageCell:UITableViewCell{
     @IBOutlet var imageCell: UIImageView!
     
+
     func displayImage(forImage imageForDisplay:UIImage){
         imageCell.image = imageForDisplay
     }
