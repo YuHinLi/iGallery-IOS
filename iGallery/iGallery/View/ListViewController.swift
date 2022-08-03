@@ -13,6 +13,7 @@ final class ListViewController:UIViewController{
     private let storage = ImageStorage()
     
     @IBOutlet var tableView: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,11 +80,11 @@ extension ListViewController: UITableViewDelegate{
         alertController.addAction(action)
         present(alertController,animated: true)
     }
-    
-    
 }
 
+//Empty State
 extension UITableView{
+    //Create an empty view contains label
     func setEmptyView(title: String){
         let emptyView = UIView(frame: CGRect(x: self.center.x, y: self.center.y, width: self.bounds.size.width, height: self.bounds.size.height))
         
@@ -104,6 +105,7 @@ extension UITableView{
         self.separatorStyle = .none
     }
     
+    //Restore view
     func restore(){
         self.backgroundView = nil
         self.separatorStyle = .singleLine

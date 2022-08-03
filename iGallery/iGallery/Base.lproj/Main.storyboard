@@ -136,12 +136,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Gallery" largeTitleDisplayMode="always" id="mpg-Wu-rKZ">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.left" style="plain" id="vet-lh-owY">
-                            <connections>
-                                <action selector="close:" destination="RoG-ux-qUP" id="aR0-gd-fog"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="✏️ Right Title" id="B4B-n3-6EV"/>
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" style="plain" id="vet-lh-owY"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ZCr-Fg-Tgb" id="PMv-Tj-Xrr"/>
@@ -159,7 +154,6 @@
         <image name="Like" width="80" height="80"/>
         <image name="Like-Pressed" width="80" height="80"/>
         <image name="chevron.left" width="15" height="15"/>
-        <image name="✏️ Right Title" width="21" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
