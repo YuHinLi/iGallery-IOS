@@ -41,12 +41,14 @@ class RandomImageGenerator{
 
                 completion(image)
             }else{
-                print("Task Error")
+                print("Network Error")
                 completion(nil)
             }
         }
         task.resume()
     }
+    
+
     
     func getCurrentImage() -> Data?{
         return self.currentImage

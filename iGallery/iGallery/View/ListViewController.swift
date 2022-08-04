@@ -74,8 +74,10 @@ extension ListViewController: UITableViewDelegate{
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     
+    
+    
     private func showConfirmation(){
-        let alertController =  UIAlertController()
+        let alertController =  UIAlertController(title: "Success", message: "Image deleted!", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel)
         alertController.addAction(action)
         present(alertController,animated: true)
