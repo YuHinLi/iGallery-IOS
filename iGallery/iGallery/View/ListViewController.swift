@@ -12,14 +12,11 @@ final class ListViewController:UIViewController{
     private static let resuableCellID = "ImageCell"
     private let storage = ImageStorage()
     
-    @IBOutlet var navItem: UINavigationItem!
     @IBOutlet var tableView: UITableView!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navItem.title = "Gallery"
-        navItem.titleView?.backgroundColor = UIColor(named: "Background White")
         tableView?.backgroundColor = UIColor(named: "Background Gray")
         tableView?.delegate = self
         tableView?.dataSource = self

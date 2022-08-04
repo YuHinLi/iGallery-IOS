@@ -81,6 +81,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lZC-90-k5B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Background White"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="orange"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="RoG-ux-qUP" kind="relationship" relationship="rootViewController" id="xxO-Ci-2cV"/>
@@ -90,7 +94,7 @@
             </objects>
             <point key="canvasLocation" x="417" y="205"/>
         </scene>
-        <!--List View Controller-->
+        <!--Gallery-->
         <scene sceneID="9be-Oi-TMl">
             <objects>
                 <viewController id="RoG-ux-qUP" customClass="ListViewController" customModule="iGallery" customModuleProvider="target" sceneMemberID="viewController">
@@ -143,7 +147,7 @@
                             <constraint firstItem="RVx-Hb-hau" firstAttribute="bottom" secondItem="ZCr-Fg-Tgb" secondAttribute="bottom" constant="-35" id="ux6-4E-q21"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="mpg-Wu-rKZ">
+                    <navigationItem key="navigationItem" title="Gallery" id="mpg-Wu-rKZ">
                         <barButtonItem key="leftBarButtonItem" image="chevron.left" style="plain" id="vet-lh-owY">
                             <connections>
                                 <action selector="close:" destination="RoG-ux-qUP" id="A6J-c9-Glb"/>
@@ -151,7 +155,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="navItem" destination="mpg-Wu-rKZ" id="miT-Am-8Ei"/>
                         <outlet property="tableView" destination="ZCr-Fg-Tgb" id="PMv-Tj-Xrr"/>
                     </connections>
                 </viewController>
