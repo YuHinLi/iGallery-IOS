@@ -83,10 +83,26 @@ extension ListViewController: UITableViewDelegate{
     private func showConfirmation(){
         let alertController =  UIAlertController(title: "Success", message: "Image deleted!", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel)
+        action.setValue(UIColor(named:"Orange"),forKey: "titleTextColor")
         alertController.addAction(action)
+        alertController.view.tintColor = UIColor(named: "orange")
+
         present(alertController,animated: true)
     }
 }
+
+//UI Alert text color
+//extension UIAlertAction{
+//    var titleTextColor: UIColor?{
+//        get{
+//            return self.value(forKey: "titleTextColor")as? UIColor
+//        }set{
+//            self.setValue(newValue, forKey: "titleTextColor")
+//        }
+//    }
+//
+//}
+
 
 //Empty State
 extension UITableView{

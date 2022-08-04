@@ -60,6 +60,7 @@ class ViewController: UIViewController {
         let ok = UIAlertAction(title: "OK", style: .default)
         
         netWorkAlert.addAction(ok)
+        netWorkAlert.view.tintColor = UIColor(named: "orange")
         self.present(netWorkAlert, animated: true)
     }
 }
