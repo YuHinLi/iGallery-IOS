@@ -34,7 +34,10 @@ extension ListViewController: UITableViewDataSource{
             print("Cannot create the cell")
             return UITableViewCell()
         }
+
         cell.imageCell.image = UIImage(data: storage.images[indexPath.item])
+        cell.imageCell.contentMode = .scaleAspectFill
+
         return cell
     }
     

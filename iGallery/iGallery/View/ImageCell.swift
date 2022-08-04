@@ -13,6 +13,7 @@ class ImageCell:UITableViewCell{
     
 
     func displayImage(forImage imageForDisplay:UIImage){
+
         imageCell.image = imageForDisplay
     }
 }
