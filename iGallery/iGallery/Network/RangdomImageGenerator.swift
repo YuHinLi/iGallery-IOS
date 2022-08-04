@@ -11,7 +11,6 @@ import UIKit
 class RandomImageGenerator{
     private static let endpoint = "https://picsum.photos"
     private static var setBound: Bool = false
-//    static var currentImage: Data?
     
     private var link: String!
     private var width: Int?
@@ -28,8 +27,8 @@ class RandomImageGenerator{
         }
 
         guard let url = URL(string: link) else{
-            completion(nil)
             print("URL Error")
+            completion(nil)
             return
         }
         
@@ -38,7 +37,6 @@ class RandomImageGenerator{
             if let data = data{
                 let image = UIImage(data: data)
                 self.currentImage = data
-
                 completion(image)
             }else{
                 print("Network Error")

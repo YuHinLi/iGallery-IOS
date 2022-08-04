@@ -31,6 +31,7 @@
                                 <rect key="frame" x="65" y="689" width="104" height="80"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Dislike"/>
+                                <state key="disabled" image="Dislike-Disable "/>
                                 <state key="highlighted" image="Dislike-Pressed"/>
                                 <connections>
                                     <action selector="dislike:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rS1-BO-Tw1"/>
@@ -40,6 +41,7 @@
                                 <rect key="frame" x="269" y="689" width="80" height="80"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Like"/>
+                                <state key="disabled" image="Like-Disable"/>
                                 <state key="highlighted" image="Like-Pressed"/>
                                 <connections>
                                     <action selector="like:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rV-JV-xc3"/>
@@ -153,9 +155,11 @@
     </scenes>
     <resources>
         <image name="Dislike" width="80" height="80"/>
+        <image name="Dislike-Disable " width="80" height="80"/>
         <image name="Dislike-Pressed" width="80" height="80"/>
         <image name="Gallery" width="50" height="42"/>
         <image name="Like" width="80" height="80"/>
+        <image name="Like-Disable" width="80" height="80"/>
         <image name="Like-Pressed" width="80" height="80"/>
         <image name="chevron.left" width="15" height="15"/>
         <systemColor name="systemBackgroundColor">
