@@ -12,12 +12,15 @@ final class ListViewController:UIViewController{
     private static let resuableCellID = "ImageCell"
     private let storage = ImageStorage()
     
+    @IBOutlet var navItem: UINavigationItem!
     @IBOutlet var tableView: UITableView!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navItem.title = "Gallery"
+        navItem.titleView?.backgroundColor = UIColor(named: "Background White")
+        tableView?.backgroundColor = UIColor(named: "Background Gray")
         tableView?.delegate = self
         tableView?.dataSource = self
     }
@@ -53,6 +56,7 @@ extension ListViewController: UITableViewDataSource{
 }
 
 extension ListViewController: UITableViewDelegate{
+
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         return tableView.frame.height
@@ -97,7 +101,8 @@ extension UITableView{
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.textColor = UIColor.black
-        titleLabel.font = UIFont(name: "HelveticaNeue-Regular", size: 18)
+        titleLabel.font = UIFont(name: "SF Pro", size: 15)
+        titleLabel.textColor = UIColor.gray
         
         emptyView.addSubview(titleLabel)
         titleLabel.centerXAnchor.constraint(equalTo: emptyView.centerXAnchor).isActive = true

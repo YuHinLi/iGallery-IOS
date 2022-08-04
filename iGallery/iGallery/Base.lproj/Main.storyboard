@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -89,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="417" y="205"/>
         </scene>
-        <!--Gallery-->
+        <!--List View Controller-->
         <scene sceneID="9be-Oi-TMl">
             <objects>
                 <viewController id="RoG-ux-qUP" customClass="ListViewController" customModule="iGallery" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,8 +101,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZCr-Fg-Tgb">
                                 <rect key="frame" x="-16" y="56" width="446" height="821"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="sectionIndexColor" systemColor="systemRedColor"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" name="Background Gray"/>
+                                <color key="sectionIndexColor" name="orange"/>
+                                <color key="sectionIndexBackgroundColor" name="Background Gray"/>
+                                <color key="sectionIndexTrackingBackgroundColor" name="Background Gray"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" id="Bh5-vh-Peh" customClass="ImageCell" customModule="iGallery" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="446" height="43.5"/>
@@ -112,8 +115,10 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-SQ-8bQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="446" height="43.5"/>
+                                                    <color key="backgroundColor" name="Background Gray"/>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" name="Background Gray"/>
                                             <constraints>
                                                 <constraint firstItem="dI7-SQ-8bQ" firstAttribute="top" secondItem="wau-Hn-Rgu" secondAttribute="top" id="2bs-y3-Mpl"/>
                                                 <constraint firstItem="dI7-SQ-8bQ" firstAttribute="leading" secondItem="wau-Hn-Rgu" secondAttribute="leading" id="7GP-Mr-wjC"/>
@@ -121,6 +126,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="dI7-SQ-8bQ" secondAttribute="bottom" id="y5E-2O-7Iv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Background Gray"/>
                                         <connections>
                                             <outlet property="imageCell" destination="dI7-SQ-8bQ" id="Chy-zz-jNt"/>
                                         </connections>
@@ -129,7 +135,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RVx-Hb-hau"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Background White"/>
                         <constraints>
                             <constraint firstItem="ZCr-Fg-Tgb" firstAttribute="top" secondItem="RVx-Hb-hau" secondAttribute="top" id="Fgi-At-xbE"/>
                             <constraint firstItem="ZCr-Fg-Tgb" firstAttribute="leading" secondItem="RVx-Hb-hau" secondAttribute="leading" constant="-16" id="HWJ-ni-afY"/>
@@ -137,7 +143,7 @@
                             <constraint firstItem="RVx-Hb-hau" firstAttribute="bottom" secondItem="ZCr-Fg-Tgb" secondAttribute="bottom" constant="-35" id="ux6-4E-q21"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Gallery" largeTitleDisplayMode="always" id="mpg-Wu-rKZ">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="mpg-Wu-rKZ">
                         <barButtonItem key="leftBarButtonItem" image="chevron.left" style="plain" id="vet-lh-owY">
                             <connections>
                                 <action selector="close:" destination="RoG-ux-qUP" id="A6J-c9-Glb"/>
@@ -145,6 +151,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="navItem" destination="mpg-Wu-rKZ" id="miT-Am-8Ei"/>
                         <outlet property="tableView" destination="ZCr-Fg-Tgb" id="PMv-Tj-Xrr"/>
                     </connections>
                 </viewController>
@@ -153,6 +160,7 @@
             <point key="canvasLocation" x="1250.7246376811595" y="204.91071428571428"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="orange"/>
     <resources>
         <image name="Dislike" width="80" height="80"/>
         <image name="Dislike-Disable " width="80" height="80"/>
@@ -162,11 +170,17 @@
         <image name="Like-Disable" width="80" height="80"/>
         <image name="Like-Pressed" width="80" height="80"/>
         <image name="chevron.left" width="15" height="15"/>
+        <namedColor name="Background Gray">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background White">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
