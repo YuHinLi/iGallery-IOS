@@ -61,7 +61,7 @@ extension ListViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let deleteAction = UIContextualAction(style: .destructive, title: "DELETE",handler: {(ac:UIContextualAction, view: UIView, success: (Bool)->Void) in
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete",handler: {(ac:UIContextualAction, view: UIView, success: (Bool)->Void) in
             
             //Delete Message from userDefault
             let image = self.storage.images[indexPath.item]
@@ -75,7 +75,8 @@ extension ListViewController: UITableViewDelegate{
         })
         
         deleteAction.backgroundColor = .red
-        return UISwipeActionsConfiguration(actions: [deleteAction])
+        let config =  UISwipeActionsConfiguration(actions: [deleteAction])
+        return config
     }
     
     
@@ -91,17 +92,6 @@ extension ListViewController: UITableViewDelegate{
     }
 }
 
-//UI Alert text color
-//extension UIAlertAction{
-//    var titleTextColor: UIColor?{
-//        get{
-//            return self.value(forKey: "titleTextColor")as? UIColor
-//        }set{
-//            self.setValue(newValue, forKey: "titleTextColor")
-//        }
-//    }
-//
-//}
 
 
 //Empty State
