@@ -47,10 +47,20 @@ class ViewController: UIViewController {
                 }
             }else{
                 //Todo print error
-                print("generateImage error")
-            
+                DispatchQueue.main.async {
+                    self.netWorkError()
+                }
             }
         })
+    }
+    
+    private func netWorkError(){
+        let netWorkAlert = UIAlertController(title: "Error", message: "Something is wrong with your internet connection!", preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "OK", style: .default)
+        
+        netWorkAlert.addAction(ok)
+        self.present(netWorkAlert, animated: true)
     }
 }
 

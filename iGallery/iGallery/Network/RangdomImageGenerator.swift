@@ -47,7 +47,6 @@ class RandomImageGenerator{
         }
         task.resume()
     }
-    
 
     
     func getCurrentImage() -> Data?{
